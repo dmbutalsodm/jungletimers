@@ -3,7 +3,7 @@ const camps = ["topKrugs", "topRed", "topRaptors", "topWolves", "topBlue", "topG
 
 function main(camp) {
     if (globalIntervals[camp]) clearInterval(globalIntervals[camp]);
-    const countdownTo = new Date().getTime() + (/(blue|red)/i.test(camp) ? 300000 : 150000);
+    const countdownTo = new Date().getTime() + (/(blue|red)/i.test(camp) ? 300000 : 120000);
     //Modfied: add "active" class to toggled button
     document.getElementsByName(camp)[0].classList.add("active")
 
